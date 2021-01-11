@@ -47,8 +47,7 @@ public class UserListInstrumentedTest {
 
     @Test
     public void checkIfRemovingUserIsWorking() {
-        onView(ViewMatchers.withId(R.id.activity_list_user_rv))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(0, clickChildView(R.id.item_list_user_delete_button)));
+        onView(ViewMatchers.withId(R.id.activity_list_user_rv)).perform(RecyclerViewActions.actionOnItemAtPosition(0, clickChildView(R.id.item_list_user_delete_button)));
         onView(withId(R.id.activity_list_user_rv)).check(new RecyclerViewUtils.ItemCount(currentUsersSize - 1));
     }
 }
