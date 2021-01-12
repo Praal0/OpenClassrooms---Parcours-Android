@@ -15,7 +15,7 @@ public class FakeApiService implements ApiService {
      */
     @Override
     public List<User> getUsers() {
-        // Retourne la liste générer auparavant.
+        // Retourne la liste générer auparavant
         return users;
     }
 
@@ -25,7 +25,7 @@ public class FakeApiService implements ApiService {
      */
     @Override
     public void generateRandomUser() {
-        // Création d'un user qui contiendra l'utilisateur a intégrer dans la liste
+        // Création d'un user qui contiendra l'utilisateur à intégrer dans la liste
         User userAdd = User.random();
         // Intégration de l'utilisateur dans la liste
         users.add(userAdd);
@@ -36,7 +36,7 @@ public class FakeApiService implements ApiService {
      */
     @Override
     public void deleteUser(User user) {
-        //Retire l'utilisateur donné dans la méthode
+        //Suppression de l'utilisateur donné dans la méthode
         users.remove(user);
 
     }
