@@ -14,17 +14,17 @@ public class UserRepository {
     }
 
     public List<User> getUsers() {
-        // On retourne grâce aux getters la liste des utilisateurs
+        // Retruns List with getters
         return apiService.getUsers();
     }
 
     public void generateRandomUser() {
-        // Utilisation de la procédure afin d'ajouter un utilisateur dans la liste venant de FAKE_USERS_RANDOM
+        // Use void for add user in List we can found in  FAKE_USERS_RANDOM
         apiService.generateRandomUser();
     }
 
     public void deleteUser(User user) {
-        // Utilisation de la procédure permettant la suppression de l'user sélectionné
+        // Use void for delete user selected
         apiService.deleteUser(user);
     }
 }
